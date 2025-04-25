@@ -16,3 +16,7 @@ Route::get('/webmaya', function () {
 Route::get('/login', [LoginController::class, 'index']);
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/listitem', [ItemListController::class, 'index']);
+
+use App\Http\Controllers\ProductController;
+
+Route::get('/produk', [ProductController::class, 'index']);
